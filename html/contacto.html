@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumínara — Contacto</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-lumina sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../img/icons/logo-bulb.png" alt="Lumínara logo" style="height:5rem;width:auto;margin-right:0.5rem;vertical-align:middle;">LUMÍNARA
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+          <li class="nav-item ms-2"><a class="nav-link" href="login.html"><img src="../img/icons/icon-user.png" alt="Acceder" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Acceder</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container">
+      <p class="label-caps mb-2">Hablemos</p>
+      <h1>Contacto</h1>
+      <p style="color:rgba(245,240,232,0.55);font-size:0.9rem;margin-top:0.5rem;">Estamos listos para ayudarte a encontrar la luz perfecta</p>
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <div class="row g-5">
+
+      <!-- FORMULARIO DE CONTACTO -->
+      <div class="col-lg-7">
+        <p class="label-caps mb-2">Escríbenos</p>
+        <h2 class="section-title mb-2">Envía un mensaje</h2>
+        <div class="section-divider left mb-4"></div>
+
+        <form class="form-lumina" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Nombre completo *</label>
+              <div class="input-group">
+                <span class="input-group-text"><img src="../img/icons/icon-person.png" alt="Persona" style="height:1rem;width:auto;"></span>
+                <input type="text" class="form-control" placeholder="Tu nombre" required />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Correo electrónico *</label>
+              <div class="input-group">
+                <span class="input-group-text"><img src="../img/icons/icon-envelope.png" alt="Correo" style="height:1rem;width:auto;"></span>
+                <input type="email" class="form-control" placeholder="tu@correo.com" required />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Teléfono</label>
+              <div class="input-group">
+                <span class="input-group-text"><img src="../img/icons/icon-phone.png" alt="Teléfono" style="height:1rem;width:auto;"></span>
+                <input type="tel" class="form-control" placeholder="+52 33 0000 0000" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Asunto *</label>
+              <select class="form-select" required>
+                <option value="" disabled selected>Seleccionar tema</option>
+                <option>Consulta sobre un producto</option>
+                <option>Proyecto de interiorismo</option>
+                <option>Pedido mayorista</option>
+                <option>Garantía y soporte</option>
+                <option>Prensa y colaboraciones</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Mensaje *</label>
+              <textarea class="form-control" rows="5" placeholder="Cuéntanos en qué podemos ayudarte..." required></textarea>
+            </div>
+            <div class="col-12">
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="privacidad" required />
+                <label class="form-check-label" for="privacidad" style="font-size:0.82rem;color:var(--color-muted);">
+                  Acepto el <a href="#" style="color:var(--color-gold);">aviso de privacidad</a> y el tratamiento de mis datos.
+                </label>
+              </div>
+              <button type="submit" class="btn btn-lumina">
+                <img src="../img/icons/icon-send.png" alt="Enviar" style="height:1rem;width:auto;margin-right:0.5rem;vertical-align:middle;">Enviar mensaje
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- LATERAL: REDES + INFO -->
+      <div class="col-lg-5">
+
+        <!-- Info de contacto -->
+        <div class="mb-5">
+          <p class="label-caps mb-2">Encuéntranos</p>
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:300;margin-bottom:1.5rem;">Información directa</h3>
+
+          <div class="d-flex gap-3 mb-3 align-items-start">
+            <img src="../img/icons/icon-location.png" alt="Dirección" style="height:1.2rem;width:auto;margin-top:2px;">
+            <div>
+              <p style="font-weight:500;margin-bottom:0.1rem;font-size:0.88rem;">Showroom principal</p>
+              <p style="color:var(--color-muted);font-size:0.85rem;margin:0;line-height:1.6;">Av. Ámsterdam 320, Col. Condesa<br>Ciudad de México, CP 06100</p>
+            </div>
+          </div>
+          <div class="d-flex gap-3 mb-3 align-items-start">
+            <img src="../img/icons/icon-clock.png" alt="Horario" style="height:1.2rem;width:auto;margin-top:2px;">
+            <div>
+              <p style="font-weight:500;margin-bottom:0.1rem;font-size:0.88rem;">Horario de atención</p>
+              <p style="color:var(--color-muted);font-size:0.85rem;margin:0;line-height:1.6;">Lun – Vie: 9:00 – 19:00<br>Sáb: 10:00 – 15:00</p>
+            </div>
+          </div>
+          <div class="d-flex gap-3 mb-3 align-items-start">
+            <img src="../img/icons/icon-phone.png" alt="Teléfono" style="height:1.2rem;width:auto;margin-top:2px;">
+            <div>
+              <p style="font-weight:500;margin-bottom:0.1rem;font-size:0.88rem;">Teléfono</p>
+              <p style="color:var(--color-muted);font-size:0.85rem;margin:0;">+52 55 5280 3300</p>
+            </div>
+          </div>
+          <div class="d-flex gap-3 align-items-start">
+            <img src="../img/icons/icon-envelope.png" alt="Email" style="height:1.2rem;width:auto;margin-top:2px;">
+            <div>
+              <p style="font-weight:500;margin-bottom:0.1rem;font-size:0.88rem;">Email</p>
+              <p style="color:var(--color-muted);font-size:0.85rem;margin:0;">hola@luminara.mx</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Redes sociales -->
+        <div class="mb-5">
+          <p class="label-caps mb-3">Síguenos</p>
+          <a href="#" class="social-btn">
+            <span class="social-icon"><img src="../img/icons/social-instagram.png" alt="Instagram" style="height:1rem;width:auto;"></span>
+            <span>@luminara.mx</span>
+            <span style="font-size:0.72rem;color:var(--color-muted);margin-left:auto;">42k seguidores</span>
+          </a>
+          <a href="#" class="social-btn">
+            <span class="social-icon"><img src="../img/icons/social-facebook.png" alt="Facebook" style="height:1rem;width:auto;"></span>
+            <span>Lumínara México</span>
+            <span style="font-size:0.72rem;color:var(--color-muted);margin-left:auto;">18k seguidores</span>
+          </a>
+          <a href="#" class="social-btn">
+            <span class="social-icon"><img src="../img/icons/social-pinterest.png" alt="Pinterest" style="height:1rem;width:auto;"></span>
+            <span>Lumínara Diseño</span>
+            <span style="font-size:0.72rem;color:var(--color-muted);margin-left:auto;">9k seguidores</span>
+          </a>
+          <a href="#" class="social-btn">
+            <span class="social-icon"><img src="../img/icons/social-linkedin.png" alt="LinkedIn" style="height:1rem;width:auto;"></span>
+            <span>Lumínara S.A. de C.V.</span>
+            <span style="font-size:0.72rem;color:var(--color-muted);margin-left:auto;">LinkedIn</span>
+          </a>
+          <a href="#" class="social-btn">
+            <span class="social-icon"><img src="../img/icons/social-whatsapp.png" alt="WhatsApp" style="height:1rem;width:auto;"></span>
+            <span>WhatsApp directo</span>
+            <span style="font-size:0.72rem;color:var(--color-muted);margin-left:auto;">Chat rápido</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- OFICINAS — 3 imágenes -->
+    <div class="row mt-2">
+      <div class="col-12 mb-4">
+        <p class="label-caps mb-2">Nuestros espacios</p>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;">Las oficinas Lumínara</h3>
+        <div class="section-divider left"></div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div style="overflow:hidden;">
+          <div class="office-img" style="background:linear-gradient(135deg,#1a1208,#2e2010);display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid var(--color-border);">
+            <img src="../img/icons/icon-building.png" alt="Oficina" style="height:3.5rem;width:auto;opacity:0.4;">
+            <p style="color:rgba(245,240,232,0.4);font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;margin-top:0.5rem;">Showroom Condesa</p>
+          </div>
+        </div>
+        <p style="font-size:0.82rem;color:var(--color-muted);margin-top:0.6rem;padding:0 0.25rem;">Nuestro espacio principal en la Colonia Condesa, donde cada rincón está iluminado por nuestras colecciones.</p>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div style="overflow:hidden;">
+          <div class="office-img" style="background:linear-gradient(135deg,#0d1520,#121c2a);display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid var(--color-border);">
+            <img src="../img/icons/icon-tools.png" alt="Taller" style="height:3.5rem;width:auto;opacity:0.4;">
+            <p style="color:rgba(245,240,232,0.4);font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;margin-top:0.5rem;">Taller de manufactura</p>
+          </div>
+        </div>
+        <p style="font-size:0.82rem;color:var(--color-muted);margin-top:0.6rem;padding:0 0.25rem;">El corazón de Lumínara: donde artesanos y diseñadores dan vida a cada pieza, desde el boceto hasta el acabado final.</p>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div style="overflow:hidden;">
+          <div class="office-img" style="background:linear-gradient(135deg,#101810,#162014);display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid var(--color-border);">
+            <img src="../img/icons/icon-showroom.png" alt="Showroom" style="height:3.5rem;width:auto;opacity:0.4;">
+            <p style="color:rgba(245,240,232,0.4);font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;margin-top:0.5rem;">Estudio de diseño</p>
+          </div>
+        </div>
+        <p style="font-size:0.82rem;color:var(--color-muted);margin-top:0.6rem;padding:0 0.25rem;">Donde nacen las ideas. Un espacio abierto de diseño colaborativo con mesas de luz, materiales y prototipos en proceso.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer-lumina mt-3">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 mb-3">
+          <div class="mb-3" style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--color-gold);letter-spacing:0.12em;">
+            <img src="../img/icons/logo-bulb.png" alt="Lumínara" style="height:5rem;width:auto;margin-right:0.5rem;vertical-align:middle;">LUMÍNARA
+          </div>
+          <p style="font-size:0.85rem;line-height:1.8;color:rgba(245,240,232,0.5);max-width:280px;">
+            Iluminación de diseño para espacios que merecen ser vistos.
+          </p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6>Tienda</h6>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="carrito.html">Carrito</a>
+          <a href="login.html">Mi cuenta</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6>Empresa</h6>
+          <a href="nosotros.html">Quiénes somos</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="col-lg-4">
+          <h6>Newsletter</h6>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="tu@email.com" style="border-radius:0;border-color:rgba(201,168,76,0.25);background:rgba(255,255,255,0.05);color:var(--color-cream);">
+            <button class="btn btn-lumina px-3" type="button">→</button>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p style="font-size:0.75rem;color:rgba(245,240,232,0.35);margin:0;">© 2026 Lumínara. Todos los derechos reservados.</p>
+        </div>
+        <div class="col-md-6 text-md-end mt-2 mt-md-0">
+          <a href="#" style="color:rgba(245,240,232,0.35);font-size:1rem;margin-left:1rem;"><img src="../img/icons/social-instagram.png" alt="Instagram" style="height:1rem;width:auto;"></a>
+          <a href="#" style="color:rgba(245,240,232,0.35);font-size:1rem;margin-left:1rem;"><img src="../img/icons/social-facebook.png" alt="Facebook" style="height:1rem;width:auto;"></a>
+          <a href="#" style="color:rgba(245,240,232,0.35);font-size:1rem;margin-left:1rem;"><img src="../img/icons/social-pinterest.png" alt="Pinterest" style="height:1rem;width:auto;"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

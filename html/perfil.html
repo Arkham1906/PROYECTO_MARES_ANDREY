@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumínara — Mi Perfil</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-lumina sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../img/icons/logo-bulb.png" alt="Lumínara logo" style="height:5rem;width:auto;margin-right:0.5rem;vertical-align:middle;">LUMÍNARA
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item ms-2"><a class="nav-link active" href="perfil.html"><img src="../img/icons/icon-user.png" alt="Mi Perfil" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Mi Perfil</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container">
+      <p class="label-caps mb-2">Cuenta</p>
+      <h1>Configuración de Perfil</h1>
+    </div>
+  </div>
+
+  <!-- PERFIL BODY -->
+  <div class="container py-5">
+    <div class="row g-5">
+
+      <!-- Avatar lateral -->
+      <div class="col-lg-3 text-center">
+        <div class="mb-3" style="width:120px;height:120px;border-radius:50%;background:var(--color-cream);border:2px solid var(--color-gold);display:flex;align-items:center;justify-content:center;margin:0 auto;">
+          <img src="../img/icons/icon-avatar.png" alt="Foto de perfil" style="height:3.5rem;width:auto;">
+        </div>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;margin-bottom:0.2rem;">Ana Ramírez</p>
+        <p class="label-caps">Cliente Premium</p>
+        <button class="btn btn-lumina-outline mt-2 w-100">
+          <img src="../img/icons/icon-camera.png" alt="Cámara" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;"> Cambiar foto
+        </button>
+
+        <hr style="border-color:var(--color-border);margin:1.5rem 0;">
+
+        <!-- Navegación lateral -->
+        <div class="list-group" style="border-radius:0;">
+          <a href="#datos" class="list-group-item list-group-item-action active" style="border-radius:0;font-size:0.82rem;letter-spacing:0.08em;background:var(--color-dark);color:var(--color-gold);border-color:var(--color-border);">
+            <img src="../img/icons/icon-person.png" alt="Datos" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Datos personales
+          </a>
+          <a href="#direccion" class="list-group-item list-group-item-action" style="border-radius:0;font-size:0.82rem;letter-spacing:0.08em;color:var(--color-dark);border-color:var(--color-border);">
+            <img src="../img/icons/icon-location.png" alt="Dirección" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Dirección
+          </a>
+          <a href="#notificaciones" class="list-group-item list-group-item-action" style="border-radius:0;font-size:0.82rem;letter-spacing:0.08em;color:var(--color-dark);border-color:var(--color-border);">
+            <img src="../img/icons/icon-bell.png" alt="Notificaciones" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Notificaciones
+          </a>
+        </div>
+      </div>
+
+      <!-- Formulario principal -->
+      <div class="col-lg-9 form-lumina">
+
+        <!-- Datos Personales -->
+        <div id="datos" class="mb-5">
+          <p class="label-caps mb-1">Sección 01</p>
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;margin-bottom:0.3rem;">Datos Personales</h3>
+          <div class="section-divider left mb-4"></div>
+
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Nombre</label>
+              <div class="input-group">
+                <span class="input-group-text"><img src="../img/icons/icon-person.png" alt="Persona" style="height:1rem;width:auto;"></span>
+                <input type="text" class="form-control" value="Andrey" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Apellido</label>
+              <div class="input-group">
+                <span class="input-group-text"><img src="../img/icons/icon-person.png" alt="Persona" style="height:1rem;width:auto;"></span>
+                <input type="text" class="form-control" value="Mares" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Correo electrónico</label>
+              <div class="input-group">
+                <span class="input-group-text"><img src="../img/icons/icon-envelope.png" alt="Correo" style="height:1rem;width:auto;"></span>
+                <input type="email" class="form-control" value="andrey@gmail.com" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Teléfono</label>
+              <div class="input-group">
+                <span class="input-group-text"><img src="../img/icons/icon-phone.png" alt="Teléfono" style="height:1rem;width:auto;"></span>
+                <input type="tel" class="form-control" value="+52 311 101 2647" />
+              </div>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Nueva contraseña</label>
+              <div class="input-group">
+                <span class="input-group-text"><img src="../img/icons/icon-lock.png" alt="Contraseña" style="height:1rem;width:auto;"></span>
+                <input type="password" class="form-control" placeholder="Dejar en blanco para no cambiar" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dirección -->
+        <div id="direccion" class="mb-5">
+          <p class="label-caps mb-1">Sección 02</p>
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;margin-bottom:0.3rem;">Dirección de Envío</h3>
+          <div class="section-divider left mb-4"></div>
+
+          <div class="row g-3">
+            <div class="col-12">
+              <label class="form-label">Calle y número</label>
+              <div class="input-group">
+                <span class="input-group-text"><img src="../img/icons/icon-house.png" alt="Dirección" style="height:1rem;width:auto;"></span>
+                <input type="text" class="form-control" value="Av. Insurgentes 1542, Int. 3B" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">Código postal</label>
+              <input type="text" class="form-control" value="63000" />
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">Ciudad</label>
+              <input type="text" class="form-control" value="Tepic" />
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">Estado</label>
+              <select class="form-select">
+                <option selected>Nayarit</option>
+                <option>Jalisco</option>
+                <option>Ciudad de México</option>
+                <option>Nuevo León</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Notificaciones -->
+        <div id="notificaciones" class="mb-5">
+          <p class="label-caps mb-1">Sección 03</p>
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;margin-bottom:0.3rem;">Preferencias de Notificación</h3>
+          <div class="section-divider left mb-4"></div>
+
+          <div class="row g-3">
+            <div class="col-12">
+              <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" id="n1" checked />
+                <label class="form-check-label" for="n1" style="font-size:0.88rem;">
+                  <strong>Nuevas colecciones</strong> — Ser el primero en conocer lanzamientos exclusivos
+                </label>
+              </div>
+              <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" id="n2" checked />
+                <label class="form-check-label" for="n2" style="font-size:0.88rem;">
+                  <strong>Seguimiento de pedidos</strong> — Actualizaciones de envío y entrega
+                </label>
+              </div>
+              <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" id="n3" />
+                <label class="form-check-label" for="n3" style="font-size:0.88rem;">
+                  <strong>Ofertas y promociones</strong> — Descuentos para clientes registrados
+                </label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="n4" checked />
+                <label class="form-check-label" for="n4" style="font-size:0.88rem;">
+                  <strong>Newsletter mensual</strong> — Tendencias de diseño e inspiración
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Guardar -->
+        <div class="d-flex gap-3">
+          <button class="btn btn-lumina">
+            <img src="../img/icons/icon-check.png" alt="Guardar" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Guardar cambios
+          </button>
+          <button class="btn btn-lumina-outline">
+            Cancelar
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer-lumina mt-5">
+    <div class="container">
+      <hr class="footer-divider">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p style="font-size:0.75rem;color:rgba(245,240,232,0.35);margin:0;">© 2026 Lumínara. Todos los derechos reservados.</p>
+        </div>
+        <div class="col-md-6 text-md-end mt-2 mt-md-0">
+          <a href="#" style="color:rgba(245,240,232,0.35);font-size:1rem;margin-left:1rem;"><img src="../img/icons/social-instagram.png" alt="Instagram" style="height:1rem;width:auto;"></a>
+          <a href="#" style="color:rgba(245,240,232,0.35);font-size:1rem;margin-left:1rem;"><img src="../img/icons/social-facebook.png" alt="Facebook" style="height:1rem;width:auto;"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

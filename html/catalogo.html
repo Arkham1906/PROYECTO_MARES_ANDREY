@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumínara — Catálogo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-lumina sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../img/icons/logo-bulb.png" alt="Lumínara logo" style="height:5rem;width:auto;margin-right:0.5rem;vertical-align:middle;">LUMÍNARA
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="catalogo.html">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item ms-2"><a class="nav-link" href="login.html"><img src="../img/icons/icon-user.png" alt="Acceder" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Acceder</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container">
+      <p class="label-caps mb-2">Explorar</p>
+      <h1>Catálogo Completo</h1>
+      <p style="color:rgba(245,240,232,0.55);font-size:0.9rem;margin-top:0.5rem;">20 piezas seleccionadas — Temporada 2026</p>
+    </div>
+  </div>
+
+  <div class="container py-5">
+
+    <!-- Filtros rápidos -->
+    <div class="d-flex flex-wrap gap-2 mb-5">
+      <button class="btn btn-lumina btn-sm">Todos</button>
+      <button class="btn btn-lumina-outline btn-sm">Mesa</button>
+      <button class="btn btn-lumina-outline btn-sm">Colgante</button>
+      <button class="btn btn-lumina-outline btn-sm">Pared</button>
+      <button class="btn btn-lumina-outline btn-sm">Exterior</button>
+      <button class="btn btn-lumina-outline btn-sm">Piso</button>
+    </div>
+
+    <!-- GRILLA DE PRODUCTOS — row-cols responsiva -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-4">
+
+      <!-- Producto 1 -->
+      <div class="col">
+        <div class="card card-lumina h-100">
+          <div style="height:220px;background:linear-gradient(135deg,#1a1410,#2e2010);display:flex;align-items:center;justify-content:center;">
+            <img src="../img/productos/producto-1.jpg" alt="Lámpara esférica" style="width:100%;height:180px;object-fit:cover;border-radius:4px;margin-bottom:0.5rem;">
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <p class="label-caps mb-1">Mesa · Colección Ónix</p>
+            <h5 class="card-title">Lámpara Solsticio</h5>
+            <p class="card-text flex-grow-1">Base de mármol negro y pantalla de lino natural. Luz cálida difusa ideal para salas y estudios.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="price-tag">$3,490</span>
+              <a href="carrito.html" class="btn btn-dark-lumina btn-sm">
+                <img src="../img/icons/icon-cart.png" alt="Carrito" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Añadir
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="col">
+        <div class="card card-lumina h-100">
+          <div style="height:220px;background:linear-gradient(135deg,#0f1a1f,#142530);display:flex;align-items:center;justify-content:center;">
+            <img src="../img/productos/producto-2.jpg" alt="Lámpara colgante estrellas" style="width:100%;height:180px;object-fit:cover;border-radius:4px;margin-bottom:0.5rem;">
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <p class="label-caps mb-1">Colgante · Colección Nácar</p>
+            <h5 class="card-title">Péndulo Átlante</h5>
+            <p class="card-text flex-grow-1">Estructura de latón cepillado con difusor esférico de vidrio soplado a mano. Para techos 3m+.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="price-tag">$7,200</span>
+              <a href="carrito.html" class="btn btn-dark-lumina btn-sm"><img src="../img/icons/icon-cart.png" alt="Carrito" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Añadir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="col">
+        <div class="card card-lumina h-100">
+          <div style="height:220px;background:linear-gradient(135deg,#1f1500,#2a1c00);display:flex;align-items:center;justify-content:center;">
+            <img src="../img/productos/producto-3.jpg" alt="Lámpara de mesa" style="width:100%;height:180px;object-fit:cover;border-radius:4px;margin-bottom:0.5rem;">
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <p class="label-caps mb-1">Piso · Colección Terra</p>
+            <h5 class="card-title">Torre Sahara</h5>
+            <p class="card-text flex-grow-1">Lámpara de pie con cuerpo de terracota artesanal y pantalla plisada en tono camel.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="price-tag">$5,800</span>
+              <a href="carrito.html" class="btn btn-dark-lumina btn-sm"><img src="../img/icons/icon-cart.png" alt="Carrito" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Añadir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 4 -->
+      <div class="col">
+        <div class="card card-lumina h-100">
+          <div style="height:220px;background:linear-gradient(135deg,#101510,#182018);display:flex;align-items:center;justify-content:center;">
+            <img src="../img/productos/producto-4.jpg" alt="Lámpara solar" style="width:100%;height:180px;object-fit:cover;border-radius:4px;margin-bottom:0.5rem;">
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <p class="label-caps mb-1">Exterior · Colección Jade</p>
+            <h5 class="card-title">Farola Kyoto</h5>
+            <p class="card-text flex-grow-1">Aluminio fundido con acabado verde musgo. IP65. Perfecta para jardines y entradas.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="price-tag">$4,100</span>
+              <a href="carrito.html" class="btn btn-dark-lumina btn-sm"><img src="../img/icons/icon-cart.png" alt="Carrito" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Añadir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 5 -->
+      <div class="col">
+        <div class="card card-lumina h-100">
+          <div style="height:220px;background:linear-gradient(135deg,#1a1010,#2a1515);display:flex;align-items:center;justify-content:center;">
+            <img src="../img/productos/producto-5.jpg" alt="Lámpara brillante" style="width:100%;height:180px;object-fit:cover;border-radius:4px;margin-bottom:0.5rem;">
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <p class="label-caps mb-1">Pared · Colección Ónix</p>
+            <h5 class="card-title">Aplique Crepúsculo</h5>
+            <p class="card-text flex-grow-1">Aplique lateral con difusor de alabastro natural que crea patrones únicos de luz y sombra.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="price-tag">$2,650</span>
+              <a href="carrito.html" class="btn btn-dark-lumina btn-sm"><img src="../img/icons/icon-cart.png" alt="Carrito" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Añadir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 6 -->
+      <div class="col">
+        <div class="card card-lumina h-100">
+          <div style="height:220px;background:linear-gradient(135deg,#101820,#152030);display:flex;align-items:center;justify-content:center;">
+            <img src="../img/productos/producto-6.jpg" alt="Lámpara hexagonal" style="width:100%;height:180px;object-fit:cover;border-radius:4px;">
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <p class="label-caps mb-1">Colgante · Colección Geometría</p>
+            <h5 class="card-title">Araña Hexágono</h5>
+            <p class="card-text flex-grow-1">Estructura modular de acero negro mate con 6 brazos y bombillas Edison de 4W cada una.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="price-tag">$9,500</span>
+              <a href="carrito.html" class="btn btn-dark-lumina btn-sm"><img src="../img/icons/icon-cart.png" alt="Carrito" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Añadir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 7 -->
+      <div class="col">
+        <div class="card card-lumina h-100">
+          <div style="height:220px;background:linear-gradient(135deg,#1c1208,#281a08);display:flex;align-items:center;justify-content:center;">
+            <img src="../img/productos/producto-7.jpg" alt="Lámpara floral" style="width:100%;height:180px;object-fit:cover;border-radius:4px;margin-bottom:0.5rem;">
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <p class="label-caps mb-1">Mesa · Colección Botánica</p>
+            <h5 class="card-title">Jazmín Bronce</h5>
+            <p class="card-text flex-grow-1">Base orgánica inspirada en tallos vegetales, fundida en bronce macizo. Pantalla de seda marfil.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="price-tag">$4,750</span>
+              <a href="carrito.html" class="btn btn-dark-lumina btn-sm"><img src="../img/icons/icon-cart.png" alt="Carrito" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Añadir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 8 -->
+      <div class="col">
+        <div class="card card-lumina h-100">
+          <div style="height:220px;background:linear-gradient(135deg,#0e0e1a,#141428);display:flex;align-items:center;justify-content:center;">
+            <img src="../img/productos/producto-8.jpg" alt="Lámpara lunar" style="width:100%;height:180px;object-fit:cover;border-radius:4px;margin-bottom:0.5rem;">
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <p class="label-caps mb-1">Colgante · Colección Luna</p>
+            <h5 class="card-title">Luna Piena</h5>
+            <p class="card-text flex-grow-1">Esfera de vidrio opal de 40 cm de diámetro. Luz uniforme y envolvente para comedor o recibidor.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="price-tag">$6,300</span>
+              <a href="carrito.html" class="btn btn-dark-lumina btn-sm"><img src="../img/icons/icon-cart.png" alt="Carrito" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Añadir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 9 -->
+      <div class="col">
+        <div class="card card-lumina h-100">
+          <div style="height:220px;background:linear-gradient(135deg,#180808,#220f0f);display:flex;align-items:center;justify-content:center;">
+            <img src="../img/productos/producto-9.jpg" alt="Lámpara cónica" style="width:100%;height:180px;object-fit:cover;border-radius:4px;margin-bottom:0.5rem;">
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <p class="label-caps mb-1">Piso · Colección Arco</p>
+            <h5 class="card-title">Arco Romano</h5>
+            <p class="card-text flex-grow-1">Brazo arqueado de hierro forjado a mano. Altura ajustable 140-175 cm. Pantalla de lino.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="price-tag">$6,900</span>
+              <a href="carrito.html" class="btn btn-dark-lumina btn-sm"><img src="../img/icons/icon-cart.png" alt="Carrito" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Añadir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 10 -->
+      <div class="col">
+        <div class="card card-lumina h-100">
+          <div style="height:220px;background:linear-gradient(135deg,#0a1510,#0d1e16);display:flex;align-items:center;justify-content:center;">
+            <img src="../img/productos/producto-10.jpg" alt="Lámpara árbol" style="width:100%;height:180px;object-fit:cover;border-radius:4px;margin-bottom:0.5rem;">
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <p class="label-caps mb-1">Exterior · Colección Bosque</p>
+            <h5 class="card-title">Sendero Oliva</h5>
+            <p class="card-text flex-grow-1">Baliza de jardín de acero corten y vidrio templado. Set de 3 unidades. IP67.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="price-tag">$3,200</span>
+              <a href="carrito.html" class="btn btn-dark-lumina btn-sm"><img src="../img/icons/icon-cart.png" alt="Carrito" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Añadir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 11 -->
+      <div class="col">
+        <div class="card card-lumina h-100">
+          <div style="height:220px;background:linear-gradient(135deg,#191000,#241800);display:flex;align-items:center;justify-content:center;">
+            <img src="../img/productos/producto-11.jpg" alt="Lámpara gema" style="width:100%;height:180px;object-fit:cover;border-radius:4px;margin-bottom:0.5rem;">
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <p class="label-caps mb-1">Mesa · Colección Cristal</p>
+            <h5 class="card-title">Diamante Topacio</h5>
+            <p class="card-text flex-grow-1">Cuerpo facetado de cristal de borosilicato con base de latón dorado. Efecto prismático.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="price-tag">$5,100</span>
+              <a href="carrito.html" class="btn btn-dark-lumina btn-sm"><img src="../img/icons/icon-cart.png" alt="Carrito" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Añadir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 12 -->
+      <div class="col">
+        <div class="card card-lumina h-100">
+          <div style="height:220px;background:linear-gradient(135deg,#10101a,#181820);display:flex;align-items:center;justify-content:center;">
+            <img src="../img/productos/producto-12.jpg" alt="Lámpara pentagonal" style="width:100%;height:180px;object-fit:cover;border-radius:4px;">
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <p class="label-caps mb-1">Pared · Colección Geometría</p>
+            <h5 class="card-title">Panel Mondrian</h5>
+            <p class="card-text flex-grow-1">Panel modular de apliques encastrables. Configura tu composición en pared hasta 9 módulos.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="price-tag">$1,890</span>
+              <a href="carrito.html" class="btn btn-dark-lumina btn-sm"><img src="../img/icons/icon-cart.png" alt="Carrito" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Añadir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 13 -->
+      <div class="col">
+        <div class="card card-lumina h-100">
+          <div style="height:220px;background:linear-gradient(135deg,#12180e,#182414);display:flex;align-items:center;justify-content:center;">
+            <img src="../img/productos/producto-13.jpg" alt="Lámpara nube" style="width:100%;height:180px;object-fit:cover;border-radius:4px;margin-bottom:0.5rem;">
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <p class="label-caps mb-1">Exterior · Colección Solar</p>
+            <h5 class="card-title">Brise Solaire</h5>
+            <p class="card-text flex-grow-1">Panel solar integrado y batería de 8 horas. Carga de día, ilumina de noche. Sin cableado.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="price-tag">$2,950</span>
+              <a href="carrito.html" class="btn btn-dark-lumina btn-sm"><img src="../img/icons/icon-cart.png" alt="Carrito" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Añadir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 14 -->
+      <div class="col">
+        <div class="card card-lumina h-100">
+          <div style="height:220px;background:linear-gradient(135deg,#1a0e18,#24122e);display:flex;align-items:center;justify-content:center;">
+            <img src="../img/productos/producto-14.jpg" alt="Lámpara globo" style="width:100%;height:180px;object-fit:cover;border-radius:4px;margin-bottom:0.5rem;">
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <p class="label-caps mb-1">Colgante · Colección Mundo</p>
+            <h5 class="card-title">Globo Mauritania</h5>
+            <p class="card-text flex-grow-1">Lámpara colgante de bambú trenzado a mano, llega teñida en tono ciruela oscuro. Ø 55 cm.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="price-tag">$3,750</span>
+              <a href="carrito.html" class="btn btn-dark-lumina btn-sm"><img src="../img/icons/icon-cart.png" alt="Carrito" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Añadir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 15 -->
+      <div class="col">
+        <div class="card card-lumina h-100">
+          <div style="height:220px;background:linear-gradient(135deg,#1c1000,#281600);display:flex;align-items:center;justify-content:center;">
+            <img src="../img/productos/producto-15.jpg" alt="Lámpara llama" style="width:100%;height:180px;object-fit:cover;border-radius:4px;margin-bottom:0.5rem;">
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <p class="label-caps mb-1">Mesa · Colección Fuego</p>
+            <h5 class="card-title">Llama Ámbar</h5>
+            <p class="card-text flex-grow-1">Pantalla de vidrio soplado en degradado ámbar-naranja. Luz cálida que evoca una llama.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="price-tag">$3,980</span>
+              <a href="carrito.html" class="btn btn-dark-lumina btn-sm"><img src="../img/icons/icon-cart.png" alt="Carrito" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Añadir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 16 -->
+      <div class="col">
+        <div class="card card-lumina h-100">
+          <div style="height:220px;background:linear-gradient(135deg,#080f18,#0c1422);display:flex;align-items:center;justify-content:center;">
+            <img src="../img/productos/producto-16.jpg" alt="Lámpara agua" style="width:100%;height:180px;object-fit:cover;border-radius:4px;margin-bottom:0.5rem;">
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <p class="label-caps mb-1">Pared · Colección Mar</p>
+            <h5 class="card-title">Ola Adriático</h5>
+            <p class="card-text flex-grow-1">Aplique de resina moldeable con inclusiones de piedra de río. Cada pieza es única e irrepetible.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="price-tag">$3,300</span>
+              <a href="carrito.html" class="btn btn-dark-lumina btn-sm"><img src="../img/icons/icon-cart.png" alt="Carrito" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Añadir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 17 -->
+      <div class="col">
+        <div class="card card-lumina h-100">
+          <div style="height:220px;background:linear-gradient(135deg,#141414,#202020);display:flex;align-items:center;justify-content:center;">
+            <img src="../img/productos/producto-17.jpg" alt="Lámpara columnas" style="width:100%;height:180px;object-fit:cover;border-radius:4px;margin-bottom:0.5rem;">
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <p class="label-caps mb-1">Piso · Colección Minimal</p>
+            <h5 class="card-title">Columna Bauhaus</h5>
+            <p class="card-text flex-grow-1">Diseño de líneas puras, acero lacado en negro mate. Dimmer integrado. Ideal para espacios minimalistas.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="price-tag">$7,800</span>
+              <a href="carrito.html" class="btn btn-dark-lumina btn-sm"><img src="../img/icons/icon-cart.png" alt="Carrito" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Añadir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 18 -->
+      <div class="col">
+        <div class="card card-lumina h-100">
+          <div style="height:220px;background:linear-gradient(135deg,#141008,#1e180c);display:flex;align-items:center;justify-content:center;">
+            <img src="../img/productos/producto-18.jpg" alt="Lámpara escudo" style="width:100%;height:180px;object-fit:cover;border-radius:4px;margin-bottom:0.5rem;">
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <p class="label-caps mb-1">Exterior · Colección Escudo</p>
+            <h5 class="card-title">Vigía Antiguo</h5>
+            <p class="card-text flex-grow-1">Lámpara mural de exterior con diseño inspirado en las farolas coloniales. Hierro fundido. IP54.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="price-tag">$2,200</span>
+              <a href="carrito.html" class="btn btn-dark-lumina btn-sm"><img src="../img/icons/icon-cart.png" alt="Carrito" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Añadir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 19 -->
+      <div class="col">
+        <div class="card card-lumina h-100">
+          <div style="height:220px;background:linear-gradient(135deg,#0e1810,#122014);display:flex;align-items:center;justify-content:center;">
+            <img src="../img/productos/producto-19.jpg" alt="Lámpara atómica" style="width:100%;height:180px;object-fit:cover;border-radius:4px;margin-bottom:0.5rem;">
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <p class="label-caps mb-1">Colgante · Colección Atómica</p>
+            <h5 class="card-title">Sputnik Esmeralda</h5>
+            <p class="card-text flex-grow-1">Araña de 18 brazos en latón con acabado verde esmeralda. Icono mid-century de 90 cm de envergadura.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="price-tag">$12,400</span>
+              <a href="carrito.html" class="btn btn-dark-lumina btn-sm"><img src="../img/icons/icon-cart.png" alt="Carrito" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Añadir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 20 -->
+      <div class="col">
+        <div class="card card-lumina h-100">
+          <div style="height:220px;background:linear-gradient(135deg,#1a1206,#22180a);display:flex;align-items:center;justify-content:center;">
+            <img src="../img/productos/Producto-20.jpg" alt="Premio" style="width:100%;height:180px;object-fit:cover;border-radius:4px;margin-bottom:0.5rem;">
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <p class="label-caps mb-1">Mesa · Edición Limitada</p>
+            <h5 class="card-title">Gran Premio Lumínara</h5>
+            <p class="card-text flex-grow-1">Pieza numerada. Base esculpida en alabastro blanco, pantalla de seda dupioni. Solo 50 unidades.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="price-tag">$18,000</span>
+              <a href="carrito.html" class="btn btn-lumina btn-sm"><img src="../img/icons/icon-cart.png" alt="Carrito" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Añadir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /row -->
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer-lumina mt-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 mb-3">
+          <div class="mb-3" style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--color-gold);letter-spacing:0.12em;">
+            <img src="../img/icons/logo-bulb.png" alt="Lumínara" style="height:5rem;width:auto;margin-right:0.5rem;vertical-align:middle;">LUMÍNARA
+          </div>
+          <p style="font-size:0.85rem;line-height:1.8;color:rgba(245,240,232,0.5);max-width:280px;">
+            Iluminación de diseño para espacios que merecen ser vistos.
+          </p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6>Tienda</h6>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="carrito.html">Carrito</a>
+          <a href="login.html">Mi cuenta</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6>Empresa</h6>
+          <a href="nosotros.html">Quiénes somos</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="col-lg-4">
+          <h6>Newsletter</h6>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="tu@email.com" style="border-radius:0;border-color:rgba(201,168,76,0.25);background:rgba(255,255,255,0.05);color:var(--color-cream);">
+            <button class="btn btn-lumina px-3" type="button">→</button>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <p style="font-size:0.75rem;color:rgba(245,240,232,0.35);margin:0;">© 2026 Lumínara. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

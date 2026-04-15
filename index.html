@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumínara — Iluminación de Diseño</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-lumina sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/icons/logo-bulb.png" alt="Lumínara logo" style="height:5rem;width:auto;margin-right:0.5rem;vertical-align:middle;">LUMÍNARA
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="html/catalogo.html">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="html/carrito.html">Carrito</a></li>
+          <li class="nav-item"><a class="nav-link" href="html/nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="html/contacto.html">Contacto</a></li>
+          <li class="nav-item ms-2"><a class="nav-link" href="html/login.html"><img src="img/icons/icon-user.png" alt="Acceder" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Acceder</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-section">
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <p class="hero-eyebrow animate-fade-up d1">Colección Primavera 2026</p>
+          <h1 class="hero-title animate-fade-up d2">
+            La luz que <em>transforma</em><br>cada espacio
+          </h1>
+          <p class="hero-subtitle animate-fade-up d3">
+            Luminarias de autor diseñadas para quienes entienden que la iluminación no sólo ilumina — define atmósferas, emociona y perdura.
+          </p>
+          <div class="animate-fade-up d4">
+            <a href="html/catalogo.html" class="btn btn-lumina me-3">
+              Explorar Catálogo
+            </a>
+            <a href="html/nosotros.html" class="btn btn-lumina-outline">
+              Nuestra Historia
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-flex justify-content-end">
+          <div style="position:relative;">
+            <div style="
+              width:340px; height:420px;
+              background: linear-gradient(145deg, rgba(201,168,76,0.15), rgba(201,168,76,0.03));
+              border: 1px solid rgba(201,168,76,0.3);
+              display:flex; align-items:center; justify-content:center;
+            ">
+              <img src="img/hero/hero-lampara.jpg" alt="Lámpara destacada" style="width:160px;height:auto;opacity:0.7;">
+            </div>
+            <div style="
+              position:absolute; bottom:-20px; right:-20px;
+              width:130px; height:130px;
+              background:rgba(201,168,76,0.12);
+              border:1px solid rgba(201,168,76,0.25);
+              display:flex;flex-direction:column;align-items:center;justify-content:center;
+            ">
+              <span style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;color:var(--color-gold);line-height:1;">20+</span>
+              <span style="font-size:0.58rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(245,240,232,0.5);">Diseños</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BADGES DESTAQUE -->
+  <section class="py-3 bg-dark-lumina border-bottom" style="border-color:rgba(201,168,76,0.15)!important;">
+    <div class="container">
+      <div class="row justify-content-center text-center g-3">
+        <div class="col-auto">
+          <span class="hero-badge"><img src="img/icons/icon-truck.png" alt="Envío" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Envío gratis en pedidos +$2,000</span>
+        </div>
+        <div class="col-auto">
+          <span class="hero-badge"><img src="img/icons/icon-award.png" alt="Garantía" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Garantía de 3 años</span>
+        </div>
+        <div class="col-auto">
+          <span class="hero-badge"><img src="img/icons/icon-headset.png" alt="Asesoría" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Asesoría personalizada</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORÍAS DESTACADAS -->
+  <section class="py-5 bg-cream">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <p class="label-caps">Explorar por categoría</p>
+        <h2 class="section-title">Colecciones</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card-lumina p-4 text-center h-100">
+            <img src="img/icons/icon-lampara-mesa.png" alt="Lámparas de mesa" class="valor-icon" style="height:2.8rem;width:auto;">
+            <h5 class="mt-3" style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;">Lámparas de Mesa</h5>
+            <p class="card-text mt-2">Piezas escultóricas que se convierten en el foco de cualquier habitación.</p>
+            <a href="html/catalogo.html" class="btn btn-lumina-outline mt-3">Ver colección</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-lumina p-4 text-center h-100" style="border-color:var(--color-gold);">
+            <img src="img/icons/icon-lampara-mesa.png" alt="Colgantes" class="valor-icon" style="height:2.8rem;width:auto;">
+            <h5 class="mt-3" style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;">Colgantes & Araña</h5>
+            <p class="card-text mt-2">Iluminación central de alto impacto para comedores, salas y espacios comerciales.</p>
+            <a href="html/catalogo.html" class="btn btn-lumina mt-3">Ver colección</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-lumina p-4 text-center h-100">
+            <img src="img/icons/icon-lampara-mesa.png" alt="Iluminación exterior" class="valor-icon" style="height:2.8rem;width:auto;">
+            <h5 class="mt-3" style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;">Iluminación Exterior</h5>
+            <p class="card-text mt-2">Resistentes a la intemperie y diseñadas para prolongar la elegancia hasta el jardín.</p>
+            <a href="html/catalogo.html" class="btn btn-lumina-outline mt-3">Ver colección</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUMEN / STATS -->
+  <section class="py-5 bg-dark-lumina">
+    <div class="container py-3">
+      <div class="row text-center g-4">
+        <div class="col-6 col-md-3">
+          <p style="font-family:'Cormorant Garamond',serif;font-size:3.2rem;color:var(--color-gold);font-weight:300;line-height:1;">12</p>
+          <p class="label-caps" style="color:rgba(245,240,232,0.5);">Años de trayectoria</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <p style="font-family:'Cormorant Garamond',serif;font-size:3.2rem;color:var(--color-gold);font-weight:300;line-height:1;">8k+</p>
+          <p class="label-caps" style="color:rgba(245,240,232,0.5);">Clientes satisfechos</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <p style="font-family:'Cormorant Garamond',serif;font-size:3.2rem;color:var(--color-gold);font-weight:300;line-height:1;">200+</p>
+          <p class="label-caps" style="color:rgba(245,240,232,0.5);">Diseños exclusivos</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <p style="font-family:'Cormorant Garamond',serif;font-size:3.2rem;color:var(--color-gold);font-weight:300;line-height:1;">18</p>
+          <p class="label-caps" style="color:rgba(245,240,232,0.5);">Países de envío</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="py-5 bg-cream">
+    <div class="container py-4 text-center">
+      <p class="label-caps">Iluminación a medida</p>
+      <h2 class="section-title mb-3">¿Proyecto especial?</h2>
+      <div class="section-divider"></div>
+      <p style="max-width:520px;margin:0 auto 2rem;color:var(--color-muted);line-height:1.9;font-size:0.95rem;">
+        Trabajamos con arquitectos, diseñadores de interiores y empresas para crear soluciones de iluminación personalizadas que potencien cada proyecto.
+      </p>
+      <a href="html/contacto.html" class="btn btn-lumina">Solicitar asesoría</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-lumina">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 mb-3">
+          <div class="mb-3" style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--color-gold);letter-spacing:0.12em;">
+            <img src="img/icons/logo-bulb.png" alt="Lumínara" style="height:5rem;width:auto;margin-right:0.5rem;vertical-align:middle;">LUMÍNARA
+          </div>
+          <p style="font-size:0.85rem;line-height:1.8;color:rgba(245,240,232,0.5);max-width:280px;">
+            Iluminación de diseño para espacios que merecen ser vistos. Desde 2013, transformamos hogares y proyectos con luz de autor.
+          </p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6>Tienda</h6>
+          <a href="html/catalogo.html">Catálogo</a>
+          <a href="html/carrito.html">Carrito</a>
+          <a href="html/login.html">Mi cuenta</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6>Empresa</h6>
+          <a href="html/nosotros.html">Quiénes somos</a>
+          <a href="html/contacto.html">Contacto</a>
+          <a href="#">Prensa</a>
+        </div>
+        <div class="col-lg-4">
+          <h6>Newsletter</h6>
+          <p style="font-size:0.82rem;color:rgba(245,240,232,0.5);margin-bottom:0.8rem;">Nuevas colecciones y ofertas exclusivas.</p>
+          <div class="input-group" style="border-radius:0;">
+            <input type="email" class="form-control" placeholder="tu@email.com" style="border-radius:0;border-color:rgba(201,168,76,0.25);background:rgba(255,255,255,0.05);color:var(--color-cream);">
+            <button class="btn btn-lumina px-3" type="button">→</button>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p style="font-size:0.75rem;color:rgba(245,240,232,0.35);margin:0;">© 2026 Lumínara. Todos los derechos reservados.</p>
+        </div>
+        <div class="col-md-6 text-md-end mt-2 mt-md-0">
+          <a href="#" style="color:rgba(245,240,232,0.35);font-size:1rem;margin-left:1rem;"><img src="img/icons/social-instagram.png" alt="Instagram" style="height:1rem;width:auto;"></a>
+          <a href="#" style="color:rgba(245,240,232,0.35);font-size:1rem;margin-left:1rem;"><img src="img/icons/social-facebook.png" alt="Facebook" style="height:1rem;width:auto;"></a>
+          <a href="#" style="color:rgba(245,240,232,0.35);font-size:1rem;margin-left:1rem;"><img src="img/icons/social-pinterest.png" alt="Pinterest" style="height:1rem;width:auto;"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

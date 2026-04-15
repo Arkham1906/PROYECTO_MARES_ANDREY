@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumínara — Carrito de Compra</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-lumina sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../img/icons/logo-bulb.png" alt="Lumínara logo" style="height:5rem;width:auto;margin-right:0.5rem;vertical-align:middle;">LUMÍNARA
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link active" href="carrito.html">Carrito</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item ms-2"><a class="nav-link" href="login.html"><img src="../img/icons/icon-user.png" alt="Acceder" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Acceder</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container">
+      <p class="label-caps mb-2">Compra</p>
+      <h1>Mi Carrito</h1>
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <div class="row g-5">
+
+      <!-- TABLA CARRITO -->
+      <div class="col-lg-8">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h5 style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:300;">3 artículos en tu carrito</h5>
+          <a href="catalogo.html" style="font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-muted);text-decoration:none;">
+            <img src="../img/icons/icon-arrow-left.png" alt="Volver" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Seguir comprando
+          </a>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-lumina">
+            <thead>
+              <tr>
+                <th style="width:40%;">Producto</th>
+                <th class="text-center">Cantidad</th>
+                <th class="text-end">Precio Unit.</th>
+                <th class="text-end">Subtotal</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Artículo 1 -->
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center gap-3">
+                    <div style="width:60px;height:60px;background:linear-gradient(135deg,#1a1410,#2e2010);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                      <img src="../img/productos/producto-1.jpg" alt="Producto 1" style="width:80px;height:80px;object-fit:cover;border-radius:4px;">
+                    </div>
+                    <div>
+                      <p style="font-family:'Cormorant Garamond',serif;font-size:1rem;margin:0;font-weight:400;">Lámpara Solsticio</p>
+                      <p style="font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-muted);margin:0;">Mesa · Colección Ónix</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <div class="qty-control justify-content-center">
+                    <button class="qty-btn">−</button>
+                    <span style="font-size:0.9rem;min-width:20px;text-align:center;">1</span>
+                    <button class="qty-btn">+</button>
+                  </div>
+                </td>
+                <td class="text-end" style="font-size:0.9rem;">$3,490</td>
+                <td class="text-end"><span class="price-tag" style="font-size:0.95rem;">$3,490</span></td>
+                <td class="text-end">
+                  <button style="background:none;border:none;color:var(--color-muted);cursor:pointer;font-size:1rem;" title="Eliminar">
+                    <img src="../img/icons/icon-close.png" alt="Eliminar" style="height:1rem;width:auto;">
+                  </button>
+                </td>
+              </tr>
+
+              <!-- Artículo 2 -->
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center gap-3">
+                    <div style="width:60px;height:60px;background:linear-gradient(135deg,#0f1a1f,#142530);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                      <img src="../img/productos/producto-2.jpg" alt="Producto 2" style="width:80px;height:80px;object-fit:cover;border-radius:4px;">
+                    </div>
+                    <div>
+                      <p style="font-family:'Cormorant Garamond',serif;font-size:1rem;margin:0;font-weight:400;">Péndulo Átlante</p>
+                      <p style="font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-muted);margin:0;">Colgante · Colección Nácar</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <div class="qty-control justify-content-center">
+                    <button class="qty-btn">−</button>
+                    <span style="font-size:0.9rem;min-width:20px;text-align:center;">2</span>
+                    <button class="qty-btn">+</button>
+                  </div>
+                </td>
+                <td class="text-end" style="font-size:0.9rem;">$7,200</td>
+                <td class="text-end"><span class="price-tag" style="font-size:0.95rem;">$14,400</span></td>
+                <td class="text-end">
+                  <button style="background:none;border:none;color:var(--color-muted);cursor:pointer;font-size:1rem;">
+                    <img src="../img/icons/icon-close.png" alt="Eliminar" style="height:1rem;width:auto;">
+                  </button>
+                </td>
+              </tr>
+
+              <!-- Artículo 3 -->
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center gap-3">
+                    <div style="width:60px;height:60px;background:linear-gradient(135deg,#1f1500,#2a1c00);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                      <img src="../img/productos/producto-3.jpg" alt="Producto 3" style="width:80px;height:80px;object-fit:cover;border-radius:4px;">
+                    </div>
+                    <div>
+                      <p style="font-family:'Cormorant Garamond',serif;font-size:1rem;margin:0;font-weight:400;">Torre Sahara</p>
+                      <p style="font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-muted);margin:0;">Piso · Colección Terra</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <div class="qty-control justify-content-center">
+                    <button class="qty-btn">−</button>
+                    <span style="font-size:0.9rem;min-width:20px;text-align:center;">1</span>
+                    <button class="qty-btn">+</button>
+                  </div>
+                </td>
+                <td class="text-end" style="font-size:0.9rem;">$5,800</td>
+                <td class="text-end"><span class="price-tag" style="font-size:0.95rem;">$5,800</span></td>
+                <td class="text-end">
+                  <button style="background:none;border:none;color:var(--color-muted);cursor:pointer;font-size:1rem;">
+                    <img src="../img/icons/icon-close.png" alt="Eliminar" style="height:1rem;width:auto;">
+                  </button>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Código descuento -->
+        <div class="d-flex gap-2 mt-3">
+          <input type="text" class="form-control form-lumina" placeholder="Código de descuento" style="max-width:240px;border-radius:0;" />
+          <button class="btn btn-lumina-outline">Aplicar</button>
+        </div>
+      </div>
+
+      <!-- RESUMEN DE COMPRA -->
+      <div class="col-lg-4">
+        <div class="card card-lumina p-4" style="border-top:3px solid var(--color-gold);">
+          <p class="label-caps mb-1" style="color:var(--color-muted);">Resumen del pedido</p>
+          <h4 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:1.5rem;margin-bottom:1.5rem;">Totales</h4>
+
+          <div class="d-flex justify-content-between mb-2" style="font-size:0.88rem;">
+            <span style="color:var(--color-muted);">Subtotal (4 artículos)</span>
+            <span>$23,690</span>
+          </div>
+          <div class="d-flex justify-content-between mb-2" style="font-size:0.88rem;">
+            <span style="color:var(--color-muted);">Envío estimado</span>
+            <span style="color:#2d7a4f;">Gratis</span>
+          </div>
+          <div class="d-flex justify-content-between mb-2" style="font-size:0.88rem;">
+            <span style="color:var(--color-muted);">IVA (16%)</span>
+            <span>$3,790</span>
+          </div>
+          <hr style="border-color:var(--color-border);margin:1rem 0;">
+          <div class="d-flex justify-content-between mb-4">
+            <span style="font-weight:500;letter-spacing:0.05em;">Total</span>
+            <span class="price-tag" style="font-size:1.3rem;">$27,480</span>
+          </div>
+
+          <div class="d-grid gap-2">
+            <a href="login.html" class="btn btn-lumina text-center">
+              <img src="../img/icons/icon-lock.png" alt="Seguro" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Proceder al pago
+            </a>
+            <a href="catalogo.html" class="btn btn-lumina-outline text-center">
+              Continuar comprando
+            </a>
+          </div>
+
+          <div class="mt-3 text-center">
+            <p style="font-size:0.72rem;color:var(--color-muted);letter-spacing:0.05em;">
+              <img src="../img/icons/icon-shield.png" alt="Seguro" style="height:1rem;width:auto;margin-right:0.3rem;vertical-align:middle;">Pago seguro · SSL · 3DSecure
+            </p>
+          </div>
+        </div>
+
+        <!-- Métodos de pago -->
+        <div class="mt-3 p-3" style="border:1px solid var(--color-border);background:var(--color-ivory);">
+          <p class="label-caps mb-2" style="font-size:0.62rem;">Métodos de pago aceptados</p>
+          <div class="d-flex flex-wrap gap-2">
+            <span style="background:white;border:1px solid var(--color-border);padding:0.3rem 0.6rem;font-size:0.75rem;color:var(--color-muted);">Visa</span>
+            <span style="background:white;border:1px solid var(--color-border);padding:0.3rem 0.6rem;font-size:0.75rem;color:var(--color-muted);">Mastercard</span>
+            <span style="background:white;border:1px solid var(--color-border);padding:0.3rem 0.6rem;font-size:0.75rem;color:var(--color-muted);">OXXO</span>
+            <span style="background:white;border:1px solid var(--color-border);padding:0.3rem 0.6rem;font-size:0.75rem;color:var(--color-muted);">Transferencia</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer-lumina mt-5">
+    <div class="container">
+      <hr class="footer-divider">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p style="font-size:0.75rem;color:rgba(245,240,232,0.35);margin:0;">© 2026 Lumínara. Todos los derechos reservados.</p>
+        </div>
+        <div class="col-md-6 text-md-end mt-2 mt-md-0">
+          <a href="#" style="color:rgba(245,240,232,0.35);font-size:1rem;margin-left:1rem;"><img src="../img/icons/social-instagram.png" alt="Instagram" style="height:1rem;width:auto;"></a>
+          <a href="#" style="color:rgba(245,240,232,0.35);font-size:1rem;margin-left:1rem;"><img src="../img/icons/social-facebook.png" alt="Facebook" style="height:1rem;width:auto;"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
